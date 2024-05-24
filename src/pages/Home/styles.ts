@@ -41,12 +41,14 @@ export const BrandSection = styled.section`
       font-size: 2.5rem;
       line-height: 2.5rem;
     }
-    p {
-      max-width: 70%;
-    }
+  }
+  @media (max-width: 720px) {
     span {
       display: block;
       margin-bottom: 0.25rem;
+    }
+    p {
+      max-width: 80%;
     }
   }
 `;
