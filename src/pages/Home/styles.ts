@@ -13,6 +13,7 @@ export const BrandSection = styled.section`
   align-items: center;
   text-align: center;
   gap: 1rem;
+  margin-bottom: 16.5rem;
 
   h1 {
     font-size: 3.5rem;
@@ -22,7 +23,7 @@ export const BrandSection = styled.section`
     color: ${(props) => props.theme.primary};
   }
   p {
-    color: ${(props) => props.theme["gray-500"]};
+    color: ${(props) => props.theme["gray-300"]};
     font-size: 1.25rem;
     max-width: 60%;
   }
@@ -58,11 +59,41 @@ export const ContactButton = styled.button`
   border: 0;
   border-radius: 6px;
   color: ${(props) => props.theme.white};
-  padding: 0.75rem 2rem;
+  padding: 1rem 2rem;
   margin-top: 0.5rem;
   cursor: pointer;
+  font-weight: 600;
 
   &:hover {
     background: #9468f9;
+  }
+`;
+
+export const ServiceSection = styled.section`
+  margin-bottom: 12.5rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
+  @media (max-width: 992px) {
+    article {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 720px) {
+    article {
+      grid-template-columns: 1fr;
+    }
+    p {
+      max-width: 80%;
+    }
   }
 `;
