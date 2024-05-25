@@ -71,6 +71,7 @@ export const ContactButton = styled.button`
 
 export const ServiceSection = styled.section`
   margin-bottom: 12.5rem;
+  padding: 0 1rem;
 
   h2 {
     font-size: 2.5rem;
@@ -94,6 +95,9 @@ export const ServiceSection = styled.section`
     }
     p {
       max-width: 80%;
+    }
+    & {
+      padding: 0rem;
     }
   }
 `;
