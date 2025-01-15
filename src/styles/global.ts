@@ -5,12 +5,21 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+  }
+
+  html {
+  height: 100%;
   }
 
   body {
-    background: url("/main-bg.jpg");
-    background-size: contain; /* Ajusta o tamanho da imagem */
-    background-position: center; /* Centraliza o padrão */
+
+    /* background: url("/main-bg.jpg");
+    background-size: contain; 
+    background-position: center;  */
+  background: url("/main-bg.jpg") no-repeat center center;
+  background-size: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+    
     color: ${(props) => props.theme.white};
   }
 
