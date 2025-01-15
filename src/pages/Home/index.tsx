@@ -12,7 +12,7 @@ export function Home() {
     <MainContainer>
       <BrandSection>
         <h1>
-          <span>Dados e Desenvolvimento,</span> é isso.
+          <span>Dados e Desenvolvimento,</span> é isso!
         </h1>
         <p>
           Juntamos dados + desenvolvimento de software trazendo o melhor dos
