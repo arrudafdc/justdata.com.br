@@ -8,7 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #1D1F20;
+    background: url("/main-bg.jpg");
+    background-size: contain; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza o padrão */
     color: ${(props) => props.theme.white};
   }
 

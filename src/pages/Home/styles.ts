@@ -23,8 +23,7 @@ export const BrandSection = styled.section`
     color: ${(props) => props.theme.primary};
   }
   p {
-    color: ${(props) => props.theme["gray-300"]};
-    font-size: 1.25rem;
+    font-size: 2rem;
     max-width: 60%;
   }
 
